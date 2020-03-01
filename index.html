@@ -16,6 +16,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#49197e">
     <meta name="msapplication-TileColor" content="#49197e">
     <meta name="theme-color" content="#49197e">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body>
     <app>Loading...</app>
@@ -27,11 +28,8 @@
     <script src="_framework/blazor.webassembly.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            console.log('Registering service worker now');
             navigator.serviceWorker.register('/serviceworker.js')
-                .then(function () {
-                    console.log('Service Worker Registered');
-                });
+                .then(function () { });
         }
     </script>
 </body>
